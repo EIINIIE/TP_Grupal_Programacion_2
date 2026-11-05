@@ -1,16 +1,18 @@
 package Modelo;
 
-public class Cajero extends Empleados {
+public class Cajero extends Usuario {
+    private int id_cajero;
     private int numeroCaja;
 
     // Constructor
-    public Cajero(int id_empleado, String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo, int numeroCaja) {
-        super(id_empleado, nombre, apellido, dni, sueldo, usuario, contrasena, cargo);
+    public Cajero(int id_usuario, String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo, int numeroCaja) {
+        super(id_usuario, nombre, apellido, dni, sueldo, usuario, contrasena, cargo);
         this.numeroCaja = numeroCaja;
     }
 
-    public Cajero(String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo, int numeroCaja) {
+    public Cajero(String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo, int id_cajero, int numeroCaja) {
         super(nombre, apellido, dni, sueldo, usuario, contrasena, cargo);
+        this.id_cajero = id_cajero;
         this.numeroCaja = numeroCaja;
     }
 
@@ -18,6 +20,14 @@ public class Cajero extends Empleados {
     }
 
     // Get y Setter
+    public int getId_cajero() {
+        return id_cajero;
+    }
+
+    public void setId_cajero(int id_cajero) {
+        this.id_cajero = id_cajero;
+    }
+
     public int getNumeroCaja() {
         return numeroCaja;
     }

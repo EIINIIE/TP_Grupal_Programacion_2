@@ -1,7 +1,7 @@
 package Modelo;
 
 public class Prestamo {
-    private int idPrestamo;
+    private int id_prestamo;
     private Cliente cliente;
     private double montoSolicitado;
     private int cantidadCuotas;
@@ -12,8 +12,8 @@ public class Prestamo {
     private String estado;
 
     // Constructor
-    public Prestamo(int idPrestamo, Cliente cliente, double montoSolicitado, int cantidadCuotas, double interes, double montoTotal, double valorCuota, String fechaSolicitud, String estado) {
-        this.idPrestamo = idPrestamo;
+    public Prestamo(int id_prestamo, Cliente cliente, double montoSolicitado, int cantidadCuotas, double interes, double montoTotal, double valorCuota, String fechaSolicitud, String estado) {
+        this.id_prestamo = id_prestamo;
         this.cliente = cliente;
         this.montoSolicitado = montoSolicitado;
         this.cantidadCuotas = cantidadCuotas;
@@ -39,12 +39,12 @@ public class Prestamo {
     }
 
     // Get y Setter
-    public int getIdPrestamo() {
-        return idPrestamo;
+    public int getid_prestamo() {
+        return id_prestamo;
     }
 
-    public void setIdPrestamo(int idPrestamo) {
-        this.idPrestamo = idPrestamo;
+    public void setid_prestamo(int id_prestamo) {
+        this.id_prestamo = id_prestamo;
     }
 
     public Cliente getCliente() {
@@ -117,7 +117,7 @@ public class Prestamo {
     @Override
     public String toString() {
         return "Prestamo{" +
-                "idPrestamo=" + idPrestamo +
+                "id_prestamo=" + id_prestamo +
                 ", cliente=" + cliente +
                 ", montoSolicitado=" + montoSolicitado +
                 ", cantidadCuotas=" + cantidadCuotas +

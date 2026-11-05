@@ -1,5 +1,5 @@
 package Persistencia;
 
-public class AdministradorDAO {
+public class UsuarioDAO {
     // Metodos BDD
 }

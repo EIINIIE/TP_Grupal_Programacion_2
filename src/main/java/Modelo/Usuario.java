@@ -1,18 +1,18 @@
 package Modelo;
 
-public class Empleados {
-    private int id_empleado;
+public class Usuario {
+    private int id_usuario;
     private String nombre;
     private String apellido;
     private String dni;
-    private double sueldo;
+    private double sueldo; /// ver esto porque lo qgregamos en la clase Cliente
     private String usuario;
     private String contrasena;
-    private String cargo;
+    private String cargo; /// ver esto porque lo qgregamos en la clase Cliente
 
     // Constructor
-    public Empleados(int id_empleado, String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo) {
-        this.id_empleado = id_empleado;
+    public Usuario(int id_usuario, String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo) {
+        this.id_usuario = id_usuario;
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -22,7 +22,7 @@ public class Empleados {
         this.cargo = cargo;
     }
 
-    public Empleados(String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo) {
+    public Usuario(String nombre, String apellido, String dni, double sueldo, String usuario, String contrasena, String cargo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -32,16 +32,16 @@ public class Empleados {
         this.cargo = cargo;
     }
 
-    public Empleados() {
+    public Usuario() {
     }
 
     // Get y Setter
-    public int getId_empleado() {
-        return id_empleado;
+    public int getid_usuario() {
+        return id_usuario;
     }
 
-    public void setId_empleado(int id_empleado) {
-        this.id_empleado = id_empleado;
+    public void setid_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
     public String getNombre() {
@@ -100,15 +100,13 @@ public class Empleados {
         this.cargo = cargo;
     }
 
-
     // Metodos
-
 
     // To String
     @Override
     public String toString() {
-        return "Empleados{" +
-                "id_empleado=" + id_empleado +
+        return "Usuario{" +
+                "id_usuario=" + id_usuario +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", dni='" + dni + '\'' +

@@ -1,5 +1,5 @@
 package Persistencia;
 
-public class EmpleadosDAO {
+public class ClienteDAO {
     // Metodos BDD
 }
